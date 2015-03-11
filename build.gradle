@@ -48,6 +48,10 @@ repositories {
         name = "Tinkers"
         url = "http://dvs1.progwml6.com/files/maven"
     }
+    maven {
+        name "Mobius Repo (Waila)"
+        url "http://mobiusstrip.eu/maven"
+    }
 }
 
 dependencies {
@@ -62,6 +66,8 @@ dependencies {
     compile "applecore:AppleCore:${minecraft_version}-1.0.2:deobf"
 
     compile "tconstruct:TConstruct:${minecraft_version}-1.8.2.build877:deobf"
+
+    compile "mcp.mobius.waila:Waila:1.5.9_${minecraft_version}:dev"
 }
 
 processResources {
