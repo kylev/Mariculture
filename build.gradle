@@ -61,6 +61,10 @@ repositories {
         name 'RX14'
         url 'http://mvn.rx14.co.uk/repo/'
     }
+    ivy {
+        name "Enchiridion"
+        artifactPattern "http://addons.cursecdn.com/files/2211/379/[module]-[revision].[ext]"
+    }
 }
 
 dependencies {
@@ -80,6 +84,8 @@ dependencies {
 
     compile name: "Thaumcraft", version: "${minecraft_version}-4.2.1.0", classifier: "deobf"
     runtime group: "com.azanor.baubles", name: "Baubles", version: "${minecraft_version}-1.0.1.10.7"
+
+    compile name: "Enchiridion", version: '1.7.X-1.2b', ext: 'jar'
 }
 
 processResources {
