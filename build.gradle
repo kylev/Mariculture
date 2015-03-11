@@ -44,6 +44,10 @@ repositories {
         name = "Apple Core"
         url = "http://www.ryanliptak.com/maven/"
     }
+    maven {
+        name = "Tinkers"
+        url = "http://dvs1.progwml6.com/files/maven"
+    }
 }
 
 dependencies {
@@ -56,6 +60,8 @@ dependencies {
     compile "codechicken:NotEnoughItems:${minecraft_version}-1.0.4.90:dev"
 
     compile "applecore:AppleCore:${minecraft_version}-1.0.2:deobf"
+
+    compile "tconstruct:TConstruct:${minecraft_version}-1.8.2.build877:deobf"
 }
 
 processResources {
